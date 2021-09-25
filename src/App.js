@@ -1,16 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import IntroImageScreen from './screens/IntroImageScreen';
-import HeaderSection from './screens/HeaderSection';
-import DetailsPanel from './screens/DetailsPanel';
+import Home from './screens/Home';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes/Routes';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <HeaderSection />
-      <IntroImageScreen />
-      <DetailsPanel />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes />
+      </div>
+    </Router>
   );
 }
 

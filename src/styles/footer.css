@@ -1,0 +1,13 @@
+.Footer-parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Footer-text {
+    font-weight: 280;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 24px;
+}

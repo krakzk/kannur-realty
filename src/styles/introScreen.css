@@ -14,7 +14,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 10vh;
     align-items: center;
     justify-content: center;
     color: white;

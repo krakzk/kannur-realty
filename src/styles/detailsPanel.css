@@ -1,6 +1,8 @@
 .Details-parent {
     background-color: chartreuse;
     min-height: 60vh;
+    display: flex;
+    flex-direction: row;
 }
 .Details-plot {
     background-color: grey;

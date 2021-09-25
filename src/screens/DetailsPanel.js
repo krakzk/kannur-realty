@@ -1,22 +1,55 @@
+import history from '../routes/history';
 import '../styles/detailsPanel.css';
+
+const sampleData = [
+    {
+        heading:"Test1",
+        pointers: "This is pointer text",
+        details: "The wholde details come here"
+    },
+    {
+        heading:"Test2",
+        pointers: "This is pointer text",
+        details: "The wholde details come here"
+    },
+    {
+        heading:"Test3",
+        pointers: "This is pointer text",
+        details: "The wholde details come here"
+    },
+    {
+        heading:"Test4",
+        pointers: "This is pointer text",
+        details: "The wholde details come here"
+    },
+    {
+        heading:"Test5",
+        pointers: "This is pointer text",
+        details: "The wholde details come here"
+    },
+    {
+        heading:"Test6",
+        pointers: "This is pointer text",
+        details: "The wholde details come here"
+    }
+]
 
 const DetailsPanel = () => {
     return (
         <div className="Details-parent">
-            Details Shall come here
-            <div className="Details-plot">
-               <div className="Details-plotheader">PLot Heading</div>
+                {sampleData.map((plot) => {
+                    return (
+                        <div className="Details-plot" onClick={() => history.push('/PlotDetails')}>
+                            <div className="Details-plotheader">{plot.heading}</div>
                <div className="Details-plotcontent">
-                   Plot Mini Description: Lorem ipsum dolor sit amet, 
-                   consectetur adipiscing elit, sed do eiusmod tempor 
-                   incididunt ut labore et dolore magna aliqua. Ut 
-                   enim ad minim veniam, quis nostrud exercitation 
-                   ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                   {plot.pointers}
                </div>
                <div>
                    click to view more details
                </div>
-            </div>
+                        </div>
+                    )
+                })}
         </div>
     )
 }
