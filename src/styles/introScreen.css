@@ -1,0 +1,23 @@
+.Intro-parent {
+    background-color: #282c34;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    
+  }
+
+  .Intro-image {
+    /*background-image: url('../images/header-bg.jpg'); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat; */
+  }
