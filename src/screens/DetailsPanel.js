@@ -37,19 +37,26 @@ const sampleData = [
 const DetailsPanel = () => {
     return (
         <div className="Details-parent">
-                {sampleData.map((plot) => {
-                    return (
-                        <div className="Details-plot" onClick={() => history.push('/PlotDetails')}>
-                            <div className="Details-plotheader">{plot.heading}</div>
-               <div className="Details-plotcontent">
-                   {plot.pointers}
-               </div>
-               <div>
-                   click to view more details
-               </div>
-                        </div>
-                    )
+                {sampleData.slice(0, 3).map((plot, index) => {
+                        return (
+                            <div className="Details-plot" onClick={() => history.push({
+                                pathname: '/PlotDetails',
+                                state: plot
+                                })}>
+                                <div className="Details-plotheader">{plot.heading}</div>
+                   <div className="Details-plotcontent">
+                       {plot.pointers}
+                   </div>
+                   <div>
+                       click to view more details
+                   </div>
+                            </div>
+                        )
+                    
                 })}
+                <div onClick={() => history.push('/AllPlots')}>
+                    Load More.......
+                </div>
         </div>
     )
 }
