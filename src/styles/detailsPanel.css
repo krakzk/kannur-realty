@@ -1,19 +1,10 @@
 .Details-parent {
-    background-color: chartreuse;
+    padding: 1rem;
     min-height: 60vh;
-    display: flex;
-    flex-direction: row;
 }
 .Details-plot {
     background-color: grey;
-    margin: 36px;
-    width: 25%;
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-        
+    min-height: 15rem;
 }
 
 .Details-plotheader {
@@ -22,4 +13,10 @@
 
 .Details-plotcontent {
     padding: 16px;
+}
+.load-more{
+    position: relative;
+}
+.load-icon::after{
+    content: "\f101";
 }
