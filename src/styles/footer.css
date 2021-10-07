@@ -11,3 +11,12 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 24px;
 }
+@media(max-width: 768px) {
+    .Footer-parent {
+        display: block !important;
+    }
+    .Footer-contact{
+        margin: 24px;
+    }
+    
+}

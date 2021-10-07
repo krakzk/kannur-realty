@@ -56,3 +56,11 @@
     border-color: #d3d5df;
     box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
 }
+@media(max-width: 768px) {
+    .Details-parent{
+        display: block !important;
+    }
+    .Details-parent .mx-3{
+        margin-left: 0 !important;
+    }
+}

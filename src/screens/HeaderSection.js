@@ -4,7 +4,7 @@ const HeaderSection = () => {
     return (
         <div className="Header-parent">
             <div className="Header-text">
-                Kannur Realty
+                Kannur <span className="realty-text">Realty</span>
             </div>
         </div>
     )
