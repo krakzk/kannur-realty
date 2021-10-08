@@ -1,20 +1,31 @@
-import plotimage from '../images/for-sale.jpeg';
+import '../styles/plotDetails.css';
 
 const PlotDetailScreen = (props) => {
     const { location } = props;
     return (
-        <div>
+        <div className="Detail-parent">
            <div>
-               Heading: {location.state.heading}
+               {location.state.heading}
            </div>
            <div>
-               <img src={plotimage} alt="plot-image" />
+               <img src={location.state.imageId} width="75%" height="50%" alt="plot-image" />
            </div>
            <div>
-               Pointers: {location.state.pointers}
+               {location.state.pointers}
            </div>
            <div>
-               Deatils: {location.state.details}
+               {location.state.details}
+           </div>
+           <div>
+               For more information on the property
+               <br/>
+               Contact:
+               <br/>
+               Sajeevan P V
+               <br/>
+               Call : +91 94477 29473, +91 80757 45576
+               <br/>
+               Whatsapp : +91 80757 45576
            </div>
         </div>
     )

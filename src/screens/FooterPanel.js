@@ -7,7 +7,7 @@ const FooterPanel = () => {
                Contact us
             </div>
             <div className="Footer-contact">
-                Mob: +91 12345 12345 &nbsp;
+                Call us : +91 94477 29473, +91 80757 45576 &nbsp;
             </div>
             <div className="Footer-contact">
                 Email: kannurrealty@gmail.com

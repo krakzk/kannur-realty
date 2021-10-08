@@ -4,7 +4,7 @@ const IntroImageScreen = () => {
     return (
         <div className="Intro-parent">
             <div className="Intro-image">
-                This should come above the image
+                Locating the best Deals in Town!!
             </div>    
         </div>
     );

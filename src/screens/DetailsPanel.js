@@ -1,21 +1,26 @@
 import history from '../routes/history';
 import '../styles/detailsPanel.css';
+import plot1 from '../images/plots/plot-1.jpg';
+import plot2 from '../images/plots/plot-2.jpg';
 
 const sampleData = [
     {
-        heading: "Test1",
-        pointers: "This is pointer text",
-        details: "The wholde details come here"
+        heading: "Plot Available",
+        pointers: "18 cents near Pallikunnu Mookambika Temple",
+        details: "18 cents of land near Pallikunnu Mookambika Temple, Kannur. Rate 4.5L. Neogotiable. Partition is possible as per requirement.",
+        imageId: plot1
     },
     {
-        heading: "Test2",
-        pointers: "This is pointer text",
-        details: "The wholde details come here"
+        heading: "Residential Plot Available",
+        pointers: "11 cents at near Kannur Town",
+        details: "11 cents residential plot  at Pallikunnu Kannur. Hardly 3km from heart of Kannur town. Rate 5.5L.",
+        imageId: plot2
     },
     {
-        heading: "Test3",
-        pointers: "This is pointer text",
-        details: "The wholde details come here"
+        heading: "House Plot Available",
+        pointers: "16 cents of House Plot at Cheruvathala",
+        details: "16 cents house plot in Cheruvathala Motta. Less than 300m from Cheruvathala Motta town. Rate 1.5L",
+        imageId: "test"
     },
     {
         heading: "Test4",
