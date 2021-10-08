@@ -1,4 +1,7 @@
 .Intro-parent {
+    background-image: url('../images/header-bg.jpg'); 
+    background-attachment: fixed;
+    opacity: 0.8;
     background-color: #282c34;
     min-height: 75vh;
     display: flex;
@@ -9,8 +12,13 @@
     
   }
 
-  .Intro-image {
-    /*background-image: url('../images/header-bg.jpg'); 
+  .Intro-image {    
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    /* background-image: url('../images/header-bg.jpg'); 
     position: fixed;
     top: 0;
     width: 100%;

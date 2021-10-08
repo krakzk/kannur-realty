@@ -6,10 +6,10 @@ const FooterPanel = () => {
             <div className="Footer-text">
                Contact us
             </div>
-            <div>
-                Mob: +91 12345 12345
+            <div className="Footer-contact">
+                Mob: +91 12345 12345 &nbsp;
             </div>
-            <div>
+            <div className="Footer-contact">
                 Email: kannurrealty@gmail.com
             </div>
         </div>

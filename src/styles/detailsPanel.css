@@ -1,25 +1,66 @@
 .Details-parent {
-    background-color: chartreuse;
+    padding: 1rem;
     min-height: 60vh;
-    display: flex;
-    flex-direction: row;
 }
 .Details-plot {
-    background-color: grey;
-    margin: 36px;
-    width: 25%;
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-        
+    min-height: 15rem;
 }
 
 .Details-plotheader {
-    padding: 16px;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .Details-plotcontent {
-    padding: 16px;
+    color: #686b78;
+    font-size: 13px;
+    margin-top: 4px;
+}
+.load-more{
+    position: relative;
+    margin-top:0.5rem !important;
+    padding-right: 0 !important;
+}
+.load-icon{
+    font-weight: 400;
+}
+.load-icon::after{
+    content: "\f061";
+}
+.plot-details{
+    padding: 1rem;
+}
+.plot-main{
+    min-height: 15rem;
+}
+.details-click-more{    
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    visibility: hidden;
+    border-top: 1px solid #e9e9eb;
+    padding-top: 14px;
+    margin-top: 14px;
+}
+.Details-plot:hover .details-click-more{
+    visibility: visible !important;
+}
+.details-click-more:hover{
+    color: #5d8ed5;
+}
+
+
+.Details-plot:hover{
+    cursor: pointer;
+    border-color: #d3d5df;
+    box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+@media(max-width: 768px) {
+    .Details-parent{
+        display: block !important;
+    }
+    .Details-parent .mx-3{
+        margin-left: 0 !important;
+    }
 }
